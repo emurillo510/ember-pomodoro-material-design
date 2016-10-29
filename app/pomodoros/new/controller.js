@@ -8,38 +8,16 @@ export default Ember.Controller.extend({
  
         addPomodoro() {
             let name = this.get('pomodoroName');
-                let status = "open";
-
-                let pomodoro = this.get('store').createRecord('pomodoro', {
-                    name,
-                    status 
-                });
-                
-                pomodoro.save().then(()=> {
-                    this.set('pomodoroName', '');
-                    this.transitionToRoute('index');
-                }).catch(()=> {
-
-                });
-            /*
-            if(event.keyCode === ENTER_KEY_CODE || event.type === "click"){
-                let name = this.get('pomodoroName');
-                let status = "open";
-
-                let pomodoro = this.get('store').createRecord('pomodoro', {
-                    name,
-                    status 
-                });
-                
-                pomodoro.save().then(()=> {
-                    this.set('pomodoroName', '');
-                    this.transitionToRoute('index');
-                }).catch(()=> {
-
-                });
-            }
-            */
+            let status = "open";
+            let pomodoro = this.get('store').createRecord('pomodoro', { name , status });
             
+            pomodoro.save().then(()=> {
+            this.set('pomodoroName', '');
+            this.transitionToRoute('index');
+            }).catch(()=> {
+
+            });
         }
+        
     }
 });
