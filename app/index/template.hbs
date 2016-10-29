@@ -1,0 +1,6 @@
+{{#each model as |pomodoro|}}
+{{pomodoro.name}}
+{{pomodoro.status}}
+{{/each}}
+{{#link-to 'pomodoros'}}All Pomodoros{{/link-to}}
+{{liquid-outlet}}

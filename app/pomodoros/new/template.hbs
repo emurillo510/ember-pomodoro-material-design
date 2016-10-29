@@ -1,0 +1,9 @@
+<h1>Pomodoros New</h1>
+<form>
+  <div class="form-group">
+    <label for="new-pomodoro">Add a new pomodoro</label>
+    {{input type="text" value=pomodoroName class="form-control" id="new-pomodoro" placeholder="What are you going to accomplish?"}}
+
+  </div>
+ <button class="btn btn-primary" {{action 'addPomodoro'}}>Add</button>
+</form>
