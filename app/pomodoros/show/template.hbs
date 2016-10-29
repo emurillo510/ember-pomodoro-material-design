@@ -1,6 +1,6 @@
 <h1>Pomodoros Show</h1>
 {{model.name}}
 {{model.status}}<br/>
-<button class="btn btn-primary">Let's Start</button>
+{{#link-to 'pomodoros.inprogress' model.id}}<button class="btn btn-primary">Let's Start</button>{{/link-to}}
 <button class="btn btn-primary">Complete</button>
 <button class="btn btn-primary">Notes</button>
