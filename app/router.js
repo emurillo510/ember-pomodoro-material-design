@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('posts');
   this.route('pomodoros', function() {
     this.route('new');
+    this.route('show', { path: '/pomodoros/:pomodoro_id' });
   });
 });
 

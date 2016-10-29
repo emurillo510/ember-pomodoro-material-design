@@ -2,7 +2,7 @@
 <form>
   <div class="form-group">
     <label for="new-pomodoro">Add a new pomodoro</label>
-    {{input type="text" value=pomodoroName class="form-control" id="new-pomodoro" placeholder="What are you going to accomplish?" action="addPomodoro" on="enter"}}
+    {{input type="text" value=pomodoroName class="form-control" id="new-pomodoro" placeholder="What are you going to accomplish?" on="enter"}}
 
   </div>
  <button class="btn btn-primary" {{action 'addPomodoro'}}>Add</button>

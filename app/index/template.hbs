@@ -1,6 +1,17 @@
 {{#each model as |pomodoro|}}
-{{pomodoro.name}}
-{{pomodoro.status}}
+<div class="media">
+  {{#link-to 'pomodoros.show' pomodoro.id}}
+  <div class="media-left media-middle">
+    <a href="#">
+      <img class="media-object" src="http://miguelcobain.github.io/ember-paper/release-1/tomster-9918e85a7f1a28c78b484c34cbe88579.png" alt="..." height="90" width="100">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">{{pomodoro.name}}</h4>
+    {{pomodoro.status}}
+  </div>
+  {{/link-to}}
+</div>
 {{/each}}
 {{#link-to 'pomodoros'}}All Pomodoros{{/link-to}}
 {{liquid-outlet}}
