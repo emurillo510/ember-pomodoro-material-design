@@ -7,11 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('posts');
   this.route('pomodoros', function() {
     this.route('new');
-    this.route('show', { path: '/pomodoros/:pomodoro_id' });
-    this.route('inprogress', { path: '/pomodoros/inprogress/:pomodoro_id' });
+    this.route('show', { path: '/:pomodoro_id' });
+    this.route('inprogress', { path: '/inprogress/:pomodoro_id' });
   });
 });
 
