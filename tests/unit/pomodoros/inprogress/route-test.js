@@ -5,7 +5,3 @@ moduleFor('route:pomodoros/inprogress', 'Unit | Route | pomodoros/inprogress', {
   // needs: ['controller:foo']
 });
 
-test('it exists', function(assert) {
-  let route = this.subject();
-  assert.ok(route);
-});

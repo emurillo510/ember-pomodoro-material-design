@@ -5,7 +5,3 @@ moduleFor('route:application', 'Unit | Route | application', {
   // needs: ['controller:foo']
 });
 
-test('it exists', function(assert) {
-  let route = this.subject();
-  assert.ok(route);
-});
