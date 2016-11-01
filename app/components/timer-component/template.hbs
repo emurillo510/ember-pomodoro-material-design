@@ -8,15 +8,14 @@
 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" {{action 'setInitialTime' 'LONG_BREAK'}}>
     Long Break
 </button>
-<h1>{{minutesLeft}}</h1>
-<h1>{{secondsLeft}}</h1>
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+<p>{{minutesLeft}} : {{secondsLeft}}</p>
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" {{action 'setClockState' 'STARTED'}}>
     Start
 </button>
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" {{action 'setClockState' 'PAUSED'}}>
     Stop
 </button>
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" {{action 'setClockState' 'RESET'}}>
     Reset
 </button>
 {{#link-to 'pomodoros.show' model}}<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Reflect</button>{{/link-to}}
