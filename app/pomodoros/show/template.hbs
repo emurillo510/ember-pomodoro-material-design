@@ -1,7 +1,11 @@
 <h1>Pomodoros Show</h1>
 {{model.name}}
 {{model.status}}<br/>
-{{#link-to 'pomodoros.inprogress' model.id}}<button class="btn btn-primary">Let's Start</button>{{/link-to}}
-<button class="btn btn-primary">Complete</button>
-<button class="btn btn-primary">Notes</button>
+{{#link-to 'pomodoros.inprogress' model.id}}<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Let's Start</button>{{/link-to}}
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+    Complete
+</button>
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+    Notes
+</button>
 {{liquid-outlet}}
