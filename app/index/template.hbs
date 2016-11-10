@@ -9,12 +9,12 @@
   </div>
   <div class="media-body">
     <h4 class="media-heading">{{pomodoro.name}}</h4>
-    {{pomodoro.status}}
+    <p>{{pomodoro.status}}</p>
   </div>
   {{/link-to}}
 </div>
 {{/each}}
-{{#link-to 'pomodoros'}}All Pomodoros{{/link-to}}
+{{#link-to 'pomodoros' class="all-pomodoros"}}All Pomodoros{{/link-to}}
 {{#link-to 'pomodoros.new' class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"}}
   <i class="material-icons">add</i>
 {{/link-to}}

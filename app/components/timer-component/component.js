@@ -4,13 +4,13 @@ const CLOCK_CONFIG = {
     POMODORO: 1500,
     SHORT_BREAK: 300,
     LONG_BREAK: 600
-}
+};
 
 const CLOCK_STATE = {
     STARTED: "STARTED",
     PAUSED: "PAUSED",
     RESET: "RESET"
-}
+};
 
 export default Ember.Component.extend({
     clockState: CLOCK_STATE.PAUSED,

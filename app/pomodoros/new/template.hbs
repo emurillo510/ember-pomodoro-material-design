@@ -1,5 +1,5 @@
 <!-- Raised button with ripple -->
-{{#link-to 'index'}}
+{{#link-to 'index' class='back-btn'}}
 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
  Back
 </button>
@@ -11,7 +11,7 @@
     {{input type="text" value=pomodoroName class="form-control" id="new-pomodoro" placeholder="What are you going to accomplish?" on="enter"}}
 
   </div>
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" {{action 'addPomodoro'}}>
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect add-pomodoro" {{action 'addPomodoro'}}>
   Add
 </button>
 </form>

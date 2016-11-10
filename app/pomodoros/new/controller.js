@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-const ENTER_KEY_CODE = 13;
+//const ENTER_KEY_CODE = 13;
 
 export default Ember.Controller.extend({
     pomodoroName: "",
