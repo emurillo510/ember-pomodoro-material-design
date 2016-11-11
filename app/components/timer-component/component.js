@@ -28,14 +28,17 @@ export default Ember.Component.extend({
             switch(config) {
                 case "POMODORO":
                 this.set('initialTime', CLOCK_CONFIG.POMODORO);
+                this.set('timeleft', this.get('initialTime'));
                 console.log('initialTime:', this.get('initialTime'));
                 break;
                 case "SHORT_BREAK":
                 this.set('initialTime', CLOCK_CONFIG.SHORT_BREAK);
+                this.set('timeleft', this.get('initialTime'));
                 console.log('initialTime:', this.get('initialTime'));
                 break;
                 case "LONG_BREAK": 
                 this.set('initialTime', CLOCK_CONFIG.LONG_BREAK);
+                this.set('timeleft', this.get('initialTime'));
                 console.log('initialTime:', this.get('initialTime'));
                 break;
                 default:
@@ -58,8 +61,7 @@ export default Ember.Component.extend({
                 break;
                 case CLOCK_STATE.RESET:
                 this.set('clockState', CLOCK_STATE.PAUSED);
-                this.set('initialTime', this.get('initialTime'));
-                this.countdown(this.get('clockState'));
+                this.set('timeleft', this.get('initialTime'));
                 console.log('clock paused');
                 console.log('initialTime', this.get('initialTime'));
                 break;
