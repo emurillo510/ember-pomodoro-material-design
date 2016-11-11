@@ -19,6 +19,31 @@ test('visiting /pomodoros/:id', function(assert) {
       assert.equal(currentURL(), '/pomodoros/1');
     });
 
-
   });
+});
+
+
+test("clicking let\'s start", (assert) => {
+
+  //click()
+
+  //andThen()
+
+
+});
+
+test("click complete", (assert) => {
+
+  //click()
+
+  //andThen()
+
+});
+
+test("click notes", (assert) => {
+
+  //click()
+
+  //andThen()
+
 });
