@@ -45,6 +45,7 @@ export default function() {
   */
 
   this.post('/pomodoros');
+  this.get('/pomodoros/:id');
 
 
   /*

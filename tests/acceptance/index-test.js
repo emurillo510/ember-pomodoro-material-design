@@ -32,3 +32,19 @@ test('click add button', (assert) => {
 
 });
 
+test('add a pomodoro and select that pomodoro', (assert) => {
+
+  //visit();
+
+  //click();
+
+  //fillIn();
+
+  //click();
+
+  //select();
+  
+  //click();
+
+});
+

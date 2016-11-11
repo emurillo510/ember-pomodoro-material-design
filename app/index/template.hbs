@@ -1,7 +1,7 @@
 
 {{#each model as |pomodoro|}}
 <div class="media">
-  {{#link-to 'pomodoros.show' pomodoro.id}}
+  {{#link-to 'pomodoros.show' pomodoro.id id=pomodoro.id}}
   <div class="media-left media-middle">
     <a href="#">
       <img class="media-object" src="http://miguelcobain.github.io/ember-paper/release-1/tomster-9918e85a7f1a28c78b484c34cbe88579.png" alt="..." height="90" width="100">
